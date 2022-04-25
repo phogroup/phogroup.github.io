@@ -27,6 +27,8 @@ makes the task of inversion and UQ more expensive. We shall develop iterative in
 * [Variational inference with UQ-VAEs](/nsfcareer/year2/uqvae/)
 * [Are DNNs actually expressive?](/cdse/active_subspaces_nn_analysis)
 * [Active subspaces data-informed approach for inverse problems](/cdse/active_subspaces_inverse_problems)
+* [My test project](/test/my_project)
+
 
 ### Publications<a name="publications"></a>
 
