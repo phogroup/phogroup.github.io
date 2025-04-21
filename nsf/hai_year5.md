@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A Model-Constrained Discontinuous Galerkin Network (DGNet) for Compressible Euler Equations
-permalink: /nsfcareer/year5/hai_year5_DGNet
+permalink: /nsfcareer/year5/hai_year5
 ---
 
 ### Major Activities

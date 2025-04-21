@@ -53,7 +53,8 @@ Develop scalable sampling methods for large-scale Bayesian inverse solutions.
 - [A new look at the Ensemble Kalman Filter for Inverse Problems](/nsfcareer/year4/EnKF)
 
 ### Year 5 Progress<a name="year5"></a>
-- [Title](/nsfcareer/year5/hai_year5)
+- [A Model-Constrained Discontinuous Galerkin Network (DGNet) for Compressible Euler Equations](/nsfcareer/year5/hai_year5)
+- [ Model-constrained Tikhonov Autoencoder Network (TAEN)](/nsfcareer/year5/hai_year5_TAEN)
 - [Title](/nsfcareer/year5/krish_year5)
 - [Title](/nsfcareer/year5/year5/cole_year5)
 - [Title](/nsfcareer/year5/year5/thomas_year5)
