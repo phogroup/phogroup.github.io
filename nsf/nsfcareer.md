@@ -54,9 +54,9 @@ Develop scalable sampling methods for large-scale Bayesian inverse solutions.
 
 ### Year 5 Progress<a name="year5"></a>
 - [Discontinuous Galerkin Network (DGNet) for Compressible Euler Equations](/nsfcareer/year5/hai_year5)
-- [ Model-constrained Tikhonov Autoencoder Network (TAEN)](/nsfcareer/year5/hai_year5_TAEN)
+- [Model-constrained Tikhonov Autoencoder Network (TAEN)](/nsfcareer/year5/hai_year5_TAEN)
 - [Title](/nsfcareer/year5/krish_year5)
-- [Title](/nsfcareer/year5/cole_year5)
+- [High Dimensional Linear Latent Space Approach for Stiff Systems](/nsfcareer/year5/cole_year5)
 - [Model-constrained Gaussian processes for physics- and dimension-reduction of PDEs](/nsfcareer/year5/thomas_year5)
 
 ### Undergraduate and high-school research work<a name="undergraduate"></a>
