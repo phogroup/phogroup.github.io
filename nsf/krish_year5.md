@@ -33,7 +33,7 @@ network architecture adaptation in the framework. In particular, we provide answ
  In the active learning procedure, we need to increase the size of the network as more training data-points are available. For this we use employ the topological derivative approach that we developed last year to make a decision on where to add a new layer and how to initialize the new layer. A schematic view of the layer addition strategy is shown in Figure 1.
  
 
- ![Fig6](/assets/figures/Krish/topo.png "fig:summ6")
+ ![Fig6](/assets/figures/Krish/top.png "fig:summ6")
  Figure 1: Schematic view of the topological derivative approach: A new layer with parameters $$\epsilon\phi$$ is inserted between the $$1^{st}$$ and $$2^{nd}$$ layer. When $$\epsilon=0$$, the network $$\Omega_\epsilon$$ behaves exactly the same way as $$\Omega_0$$ under standard training process.
  
  
