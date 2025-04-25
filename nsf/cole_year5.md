@@ -1,50 +1,24 @@
 ---
 layout: page
-title: Model Constrained DNNs for Inverse Problems
+title: High Dimensional Linear Latent Space Approach for Simulating Stiff Systems
 permalink: /nsfcareer/year5/cole_year5
 ---
 
-### Major Activities
+Last year, we explored methods to reduce the computational cost of numerically integrating stiff ODEs and PDEs. The main speed bottlenecks for integration of stiff systems are small timestep requirements for numerical solver and often the necessity of an implicit, rather than explicit, integration scheme. To resolve the expensive time requirements of integration, we designed a machine learning, surrogate model architecture which can solve stiff systems without step size requirements and can be utilized to predict all time steps in the system in parallel. The approach has the capability to approximate stiff systems to a high degree of accuracy in a fraction of the time of the original solver.
 
-In this project, we introduce several model-constrained approaches—including both feed-forward deep neural network (DNN) and autoencoders—that are capable of learning not only information hidden in the training data but also in the underlying mathematical models to solve inverse problems.  We present and provide intuitions for our formulations for general nonlinear problems.   For linear inverse problems and linear networks,  the first-order optimality conditions show that our model-constrained deep learning (mcDL) approaches can learn information encoded in the underlying mathematical models and thus can produce consistent or equivalent inverse solutions.
+### Major Findings
 
-### Specific Objectives
-
-The main idea is that we take advantage of the forward map G for regularizing the network. Moreover, we also expect that it is consistent with the form of the inverse solution; and thus, improving the accuracy of the training test. To have some intitutions of the method, let us look at the case of linear network and linear inverse problem with linear operator. The formulation of mcDNN approach is
-
-$$ \min_{\textbf{b},W} \frac{1}{2} \left\| U - (WY + B) \right\|_{\Gamma^{-1}}^2 +\frac{\alpha}{2} \left\|  Y -G (WY + B)\right\|_{\Lambda^{-1}}^2.$$
-
-The optimal solution of the DNN training problem can be shown to be exactly the solution of the following regularized linear inverse problem
-
-$$
-\min_{\textbf{u}} \frac{1}{2}  \left\|\textbf{y}_{\text{obs}} - G \textbf{u}\right\|_{\Gamma^{-1}}^2 + \frac{1}{2\alpha} \left\|\textbf{u} - \textbf{u}_0 \right\|_{\Lambda^{-1}}^2,
-$$
-
-where
-
-$$
-\textbf{u}_0 =  \bar{\textbf{u}} +\bar{U} \, \bar{Y}^{\dagger} (\textbf{y}_{\text{obs}} - \bar{\textbf{y}}) - \alpha \Gamma G^T \Lambda (I - \bar{Y} \, \bar{Y}^{\dagger}) (\textbf{y}_{\text{obs}} - \bar{\textbf{y}}).
-$$
-
+We evaluated our method using three stiff systems of ODEs and two stiff PDEs: the Robertson ODE, Collisional Radiative Charge States and Energy States ODEs, and the Allen-Cahn and Cahn-Hilliard PDEs. All of the dynamical systems considered are highly-stiff and some even have multiscale solutions, making these problems extremely challenging for traditional machine learning integration schemes, such as Neural ODE. On each test problem, our approach outperforms two state-of-the-art machine learning techniques, Neural ODE and DeepONet.
 
 ### Significant Results
-#### Linear problem for testing the derivation
-The results for the linear inverse problem with a linear neural network show that the model-constrained term added to the cost function gives better results than the  naive DNN. In particular, the accuracy of naive DNN solely depends on how much training data we have. Meanwhile, as shown in the figure 1., with the same training data set, the mcDNN approach gives a lower error in the test data set.
 
+The following first table shows the prediction error, in the relative L2 norm, for each machine learning approach, on each problem. It is clear that our proposed approach outperforms all other approaches in terms of accuracy. In the table, OOM indicates that a model could not be trained on our hardware because the memory costs were too high. The second table shows the speedup achieved by our method in comparison to a traditional numerical solver for each given problem. Row one shows the total time taken by the numerical solver and our proposed approach to compute the solutions for $1000$ initial conditions, while row two shows the same for the surrogate approach. We see that our approach achieves  O(1)-O(3) speedup on all problems, in terms of wall clock computation time. Finally, the figure shows a side-by-side comparison between a solution to the Cahn-Hilliard PDE and the machine learning approximation of the solution, as well as giving the point-wise absolute error between the two methods. The initial condition was not seen by the network in training. The proposed model has very close agreement to the numerical solution, with a maximum absolute error on the order of $10^{-2}$. The bottom right plot of the figure shows the average relative L2 norm error over time across 200 test initial conditions.
 
-![image](/assets/figures/hainguyen/mcDNN_fig_1.png)
+![image](/assets/figures/cole/err_tab.png)
+![image](/assets/figures/cole/speed_tab.png)
 
-![image2](/assets/figures/hainguyen/mcDNN_fig_2.png)
+### Cahn Hilliard PDE Results
 
-#### Nonlinear PDE problems
+![image](/assets/figures/cole/new_ch.png)
 
-The results for training the conductivity coefficients for heat equation as shown in the firgure 3. It can be seen that with smaller training data set mcDNN approach is able to achive the same accuracy level compared to the naive DNN. An test sample of the inverse field obtained by Naive DNN and mcDNN is presented in the figure 4.
-
-![image](/assets/figures/hainguyen/mcDNN_fig3.png)
-
-![image2](/assets/figures/hainguyen/mcDNN_fig4.png)
-
-
-
-
-More detail about this work can be found at [https://arxiv.org/abs/2105.12033](https://arxiv.org/abs/2105.12033).
+More detail about this work can be found at [https://arxiv.org/abs/2105.12033](https://arxiv.org/pdf/2501.08423).
