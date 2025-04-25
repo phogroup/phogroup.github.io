@@ -25,7 +25,7 @@ Figure 4: Model constrained Gaussain Process (GP) Regression
 3. [Year 2](/nsfcareer/#year2)
 4. [Year 3](/nsfcareer/#year3)
 5. [Year 4](/nsfcareer/#year4)
-5. [Year 4](/nsfcareer/#year5)
+5. [Year 5](/nsfcareer/#year5)
 6. [Publications](/nsfcareer/#publications)
 7. [Software](/nsfcareer/#software)
 
