@@ -16,7 +16,7 @@ Figure 2: Evolution of solution (3D air current profile) upon adding new hidden 
 Figure 3: A high-dimensional latent space approach to predict the solutions of Cahn Hilliard PDE.
 
 ![image2](/assets/figures/tscott/ornl_fig2.png)
-Figure 4: Model constrained Gaussain Process (GP) Regression
+Figure 4: Model constrained GPR
 
 
 # Table of Contents
