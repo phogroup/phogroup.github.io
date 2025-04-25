@@ -18,9 +18,9 @@ $$
 \end{equation}
 $$
 
-where $e: \mathbb{R}^n \to \mathbb{R}^m$ is the encoder, $d: \mathbb{R}^m \to \mathbb{R}^p$ is the decoder, $g: \mathbb{R}^m \to \mathbb{R}^p$ is the PDE solver, $O: \mathbb{R}^p \to \mathbb{R}^n$ is the observation operator, $f = O \circ g: \mathbb{R}^m \to \mathbb{R}^n$ is the forward model, $u_0 \in \mathbb{R}^m$ is the prior mean, $Y \in \mathbb{R}^{n \times n_t}$ is a matrix of $n_t$ observation data samples, and $\|\cdot\|_F$ is the Frobenius norm.
+where $$e: \mathbb{R}^n \to \mathbb{R}^m$$ is the encoder, $$d: \mathbb{R}^m \to \mathbb{R}^p$$ is the decoder, $$g: \mathbb{R}^m \to \mathbb{R}^p$$ is the PDE solver, $$O: \mathbb{R}^p \to \mathbb{R}^n$$ is the observation operator, $$f = O \circ g: \mathbb{R}^m \to \mathbb{R}^n$$ is the forward model, $$u_0 \in \mathbb{R}^m$$ is the prior mean, $$Y \in \mathbb{R}^{n \times n_t}$$ is a matrix of $$n_t$$ observation data samples, and $$\|\cdot\|_F$$ is the Frobenius norm.
 
-To gain insight into *TAEN*, we analyze a linear forward problem of the form $y = F u = O \circ G u$ and $z = G u$, using linear encoder and decoder networks, $z = W_e u + b_e$ and $u = W_d y + b_d$. We define the mean of observation data $\bar{y} = Y \frac{1}{n_t}$ and the centered data matrix $\bar{Y} = Y - \bar{y} 1^\top$. Substituting these into the loss function in (1) and solving analytically yields theoretical results.
+To gain insight into *TAEN*, we analyze a linear forward problem of the form $y = F u = O \circ G u$ and $z = G u$, using linear encoder and decoder networks, $$z = W_e u + b_e$$ and $$u = W_d y + b_d$$. We define the mean of observation data $$\bar{y} = Y \frac{1}{n_t}$$ and the centered data matrix $$\bar{Y} = Y - \bar{y} 1^\top$$. Substituting these into the loss function in (1) and solving analytically yields theoretical results.
 
 ![image](/assets/figures/hainguyen/year5/TAEN_1.png)
 
@@ -32,7 +32,7 @@ Figure 1: A schematic of the TAEN approach.
 
 **Proposition**
 
-Suppose $\bar{Y}$ is full row rank, i.e., $\bar{Y} \bar{Y}^\dagger = I$, then for a new test pair $(u^\text{test}, y^\text{obs})$, the optimal encoder inverse solution is:
+Suppose $$\bar{Y}$$ is full row rank, i.e., $$\bar{Y} \bar{Y}^\dagger = I$$, then for a new test pair $$(u^\text{test}, y^\text{obs})$$, the optimal encoder inverse solution is:
 
 $$
 u^{\text{TAEN}} = (I + \lambda F^\top F)^{-1} (u_0 + \lambda F^\top \bar{Y} \bar{Y}^\dagger y^\text{obs} + \lambda F^\top (I - \bar{Y} \bar{Y}^\dagger) \bar{y}),
@@ -54,7 +54,7 @@ and the decoder forward solution is exact, i.e., $z^{\text{TAEN}} = W_d u^\text{
 
 ---
 
-The inverse solution of *TAEN* is interpretable as a Tikhonov inverse solver for the linear case, with error no larger than the difference between the prior mean and ground truth. The forward decoder solution is exact as $W_d = G$. Full row rank $\bar{Y}$ can be achieved from a single sample using data randomization techniques.
+The inverse solution of *TAEN* is interpretable as a Tikhonov inverse solver for the linear case, with error no larger than the difference between the prior mean and ground truth. The forward decoder solution is exact as $$W_d = G$$. Full row rank $$\bar{Y}$$ can be achieved from a single sample using data randomization techniques.
 
 
 
@@ -63,7 +63,7 @@ The inverse solution of *TAEN* is interpretable as a Tikhonov inverse solver for
 
 We applied *nAE* (naive data-driven autoencoder) and *TAEN* to the Navier-Stokes equation problem, training with one sample. Over 500 test samples, *TAEN* achieved a 25.68% inverse relative error, comparable to 22.71% by Tikhonov regularization, while *nAE* yielded 104%. Forward relative errors were 560% for *nAE* and 0.2% for *TAEN*.
 
-The three subfigures on the first row of <span style="color:blue">Figure 2</span> shows ground truth vorticity at $T = 10s$, initial vorticity, and Tikhonov solution for initial vorticity via PDE-constrained optimization. The second row shows final time vorticity from *TAEN*, *TAEN* initial vorticity, and *nAE* vorticity. *TAEN* and *nAE* provide real-time solutions, ~1,240 times faster for forward Navier-Stokes and ~25,000 times faster for inferring initial vorticity from final time observations (black dots).
+The three subfigures on the first row of <span style="color:blue">Figure 2</span> shows ground truth vorticity at $$T = 10s$$, initial vorticity, and Tikhonov solution for initial vorticity via PDE-constrained optimization. The second row shows final time vorticity from *TAEN*, *TAEN* initial vorticity, and *nAE* vorticity. *TAEN* and *nAE* provide real-time solutions, ~1,240 times faster for forward Navier-Stokes and ~25,000 times faster for inferring initial vorticity from final time observations (black dots).
 
 ![image](/assets/figures/hainguyen/year5/TAEN_2.png)
 <div   align                                       = "left">
