@@ -15,6 +15,9 @@ Figure 2: Evolution of solution (3D air current profile) upon adding new hidden 
 ![image](/assets/figures/cole/cole_n.png)
 Figure 3: A high-dimensional latent space approach to predict the solutions of Cahn Hilliard PDE.
 
+![image2](/assets/figures/tscott/ornl_fig2.png)
+Figure 4: Model constrained Gaussain Process (GP) Regression
+
 
 # Table of Contents
 1. [Aims](/nsfcareer/#aims)
@@ -22,6 +25,7 @@ Figure 3: A high-dimensional latent space approach to predict the solutions of C
 3. [Year 2](/nsfcareer/#year2)
 4. [Year 3](/nsfcareer/#year3)
 5. [Year 4](/nsfcareer/#year4)
+5. [Year 4](/nsfcareer/#year5)
 6. [Publications](/nsfcareer/#publications)
 7. [Software](/nsfcareer/#software)
 
@@ -75,25 +79,44 @@ Develop scalable sampling methods for large-scale Bayesian inverse solutions.
 
 ### Publications<a name="publications"></a>
 
-[1] Aaron Myers, Alexandre H. Thiery, Kainan Wang, and Tan Bui-Thanh, [Sequential Ensemble Transform for Bayesian Inverse Problems](https://arxiv.org/pdf/1909.09591.pdf), Journal of Computational Physics, Volume 427, 15 February 2021, 110055.
+[1] Hai Van Nguyen, Jau-Uei Chen, Tan Bui-Thanh, [A model-constrained discontinuous Galerkin Network (DGNet) for compressible Euler equations with out-of-distribution generalization](https://www.sciencedirect.com/science/article/pii/S0045782525001847), Computer Methods in Applied Mechanics and Engineering, Volume 440, 15 May 2025, 117912.
 
-[2] Aaron Myers, “Particle Methods for Bayesian Inverse Problems Governed by Partial Differential Equations”. PhD Thesis, The University of Texas at Austin, 2020.
 
-[3] Jonathan Wittmer and Tan Bui-Thanh, "Data-Informed Regularization For Inverse and Imaging Problems", Oden Institute REPORT 20-24, April 2020, [https://www.oden.utexas.edu/media/reports/2020/2024.pdf](https://www.oden.utexas.edu/media/reports/2020/2024.pdf)
+[2] CG Krishnanunni, Tan Bui-Thanh, [An adaptive and stability-promoting layerwise training approach for sparse deep neural network architecture](https://www.sciencedirect.com/science/article/pii/S0045782525002105), Computer Methods in Applied Mechanics and Engineering, Volume 441, 1 June 2025, 117938.
 
-[4] Hwan Goh, Sheroze Sheriffdeen, Jonathan Wittmer, Tan Bui-Thanh, "Solving Bayesian Inverse Problems via Variational Autoencoders", Submitted, 2021, [https://arxiv.org/abs/1912.04212](https://arxiv.org/abs/1912.04212)
+[[3](https://arxiv.org/abs/2502.06885)] C G Krishnanunni, Tan Bui-Thanh, Clint Dawson.  (2021).  "Topological derivative approach for deep neural network architecture adaptation." , [https://arxiv.org/abs/2502.06885](https://arxiv.org/abs/2502.06885)
 
-[5] Sheriffdeen, Sheroze, et al. "Accelerating PDE-constrained Inverse Solutions with Deep Learning and Reduced Order Models." [arXiv preprint arXiv:1912.08864](https://arxiv.org/abs/1912.08864) (2019)
+[[4](https://arxiv.org/abs/2412.07010)] Hai V. Nguyen, Tan Bui-Thanh, Clint Dawson.  (2025).  "TAEN: A Model-Constrained Tikhonov Autoencoder Network for Forward and Inverse Problems." , [https://arxiv.org/abs/2412.07010](https://arxiv.org/abs/2412.07010)
 
-[6] Jonathan Wittmer, C G Krishnanunni, Hai Nguyen, Tan Bui-Thanh, "On Unifying Randomized Methods for Inverse and Optimization Problems." In preparation.
 
-[7] C G Krishnanunni, Tan Bui-Thanh, "Layerwise Sparsifying Training and Sequential Learning Strategy for Neural Architecture Adaptation" In preparation.
+[[5](https://arxiv.org/abs/2501.08423)] William Cole Nockolds, C. G. Krishnanunni, Tan Bui-Thanh.  (2025).  "A Constant Velocity Latent Dynamics Approach for Accelerating Simulation of Stiff Nonlinear Systems." , [https://arxiv.org/abs/2501.08423](https://arxiv.org/abs/2501.08423)
 
-[[8](https://arxiv.org/abs/2105.12033)] Hai Nguyen, Tan Bui-Thanh.  (2021).  "Model-constrained Deep Learning Approaches for Inverse Problems." , [https://arxiv.org/abs/2105.12033](https://arxiv.org/abs/2105.12033)
 
-[[9](https://arxiv.org/abs/2208.04995)] Hai Nguyen, Tan Bui-Thanh.  (2022). "A Model-Constrained Tangent Manifold Learning Approach for Dynamical Systems." [https://arxiv.org/abs/2208.04995](https://arxiv.org/abs/2208.04995)
+[[6](https://arxiv.org/abs/2105.12033)] Hai Nguyen, Tan Bui-Thanh.  (2021).  "Model-constrained Deep Learning Approaches for Inverse Problems." , [https://arxiv.org/abs/2105.12033](https://arxiv.org/abs/2105.12033)
 
-[[10](https://www.mdpi.com/2079-3197/10/3/38)] Hai Nguyen, Jonathan Wittmer, Tan Bui-Thanh. (2022).  "DIAS: A Data-Informed Active Subspace Regularization Framework for Inverse Problems." Computation, 10(3), 38.
+
+[7] Hai V Nguyen, Tan Bui-Thanh, [A model-constrained tangent slope learning approach for dynamical systems](https://www.tandfonline.com/doi/full/10.1080/10618562.2022.2146677), International Journal of Computational Fluid Dynamics, Volume 36, 2022, Issue 7.
+
+[[8](https://www.mdpi.com/2079-3197/10/3/38)] Hai Nguyen, Jonathan Wittmer, Tan Bui-Thanh. (2022).  "DIAS: A Data-Informed Active Subspace Regularization Framework for Inverse Problems." Computation, 10(3), 38.
+
+<!-- [1] Aaron Myers, Alexandre H. Thiery, Kainan Wang, and Tan Bui-Thanh, [Sequential Ensemble Transform for Bayesian Inverse Problems](https://arxiv.org/pdf/1909.09591.pdf), Journal of Computational Physics, Volume 427, 15 February 2021, 110055. -->
+
+<!--[2] Aaron Myers, “Particle Methods for Bayesian Inverse Problems Governed by Partial Differential Equations”. PhD Thesis, The University of Texas at Austin, 2020. -->
+
+<!--[3] Jonathan Wittmer and Tan Bui-Thanh, "Data-Informed Regularization For Inverse and Imaging Problems", Oden Institute REPORT 20-24, April 2020, [https://www.oden.utexas.edu/media/reports/2020/2024.pdf](https://www.oden.utexas.edu/media/reports/2020/2024.pdf)-->
+
+<!--[4] Hwan Goh, Sheroze Sheriffdeen, Jonathan Wittmer, Tan Bui-Thanh, "Solving Bayesian Inverse Problems via Variational Autoencoders", Submitted, 2021, [https://arxiv.org/abs/1912.04212](https://arxiv.org/abs/1912.04212)-->
+
+<!--[5] Sheriffdeen, Sheroze, et al. "Accelerating PDE-constrained Inverse Solutions with Deep Learning and Reduced Order Models." [arXiv preprint arXiv:1912.08864](https://arxiv.org/abs/1912.08864) (2019)-->
+
+
+<!--[6] Jonathan Wittmer, C G Krishnanunni, Hai Nguyen, Tan Bui-Thanh, "On Unifying Randomized Methods for Inverse and Optimization Problems." In preparation.-->
+
+
+
+<!--[[9](https://arxiv.org/abs/2208.04995)] Hai Nguyen, Tan Bui-Thanh.  (2022). "A Model-Constrained Tangent Manifold Learning Approach for Dynamical Systems." [https://arxiv.org/abs/2208.04995](https://arxiv.org/abs/2208.04995)-->
+
+
 
 ### Software<a name="software"></a>
 
