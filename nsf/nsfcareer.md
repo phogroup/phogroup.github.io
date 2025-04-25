@@ -6,13 +6,13 @@ permalink: /nsfcareer/
 
 <!-- ![](/assets/figures/y1/img.png)    ![](/assets/figures/y1/poisson.png) -->
 ![](/assets/figures/hainguyen/DGGNN_2D_Euler_Airfoil_Mach1p2_AoA5.gif)
-Figure 1: Predictions made on an airfoil after solving the Euler equations.
+Figure 1: Predictions made on an airfoil after solving the Euler equations with DGGNN approach.
 
 ![](/assets/figures/Krish/topo_2.png)
 Figure 2: Evolution of solution (3D air current profile) upon adding new hidden layers in **architecture adaptation**.
 
 
-![image](/assets/figures/cole/new_ch.png)
+![image](/assets/figures/cole/cole_n.png)
 Figure 3: A high-dimensional latent space approach to predict the solutions of Cahn Hilliard PDE.
 
 
