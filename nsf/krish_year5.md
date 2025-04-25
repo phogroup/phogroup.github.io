@@ -17,8 +17,6 @@ network in the beginning. However, as new data points are queried and added to t
 essential to increase the capacity of the network to improve the generalization. Therefore, it is essential to
 develop an active learning framework that incorporates architecture adaptation.
 
-
-
 ### Adopted strategy
 
 In this work we develop a new active learning strategy that incorporates neural
@@ -29,8 +27,6 @@ network architecture adaptation in the framework. In particular, we provide answ
 - Where (at which position along the depth) to add a new layer and how to initialize this newly added layer?
 
 - How does adding a new layer influence the query selection strategy?
-
-- How to solve the sample saturation and training saturation problem in statistical active learning framework?
 
 #### Brief outline of the proposed approach
 
