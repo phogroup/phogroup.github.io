@@ -50,7 +50,7 @@ $$
 \min_u \frac{1}{2} \|u - u_0\|_2^2 + \frac{\lambda}{2} \|F u - y^\text{obs}\|_2^2,
 $$
 
-and the decoder forward solution is exact, i.e., $z^{\text{TAEN}} = W_d u^\text{test} = G u^\text{test} = z^\text{True}$.
+and the decoder forward solution is exact, i.e., $$z^{\text{TAEN}} = W_d u^\text{test} = G u^\text{test} = z^\text{True}$$.
 
 ---
 

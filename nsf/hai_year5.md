@@ -32,7 +32,7 @@ with $$\boldsymbol{v}^{i} = \boldsymbol{u}^{i} + \boldsymbol{\epsilon}$, $\bolds
 
 ### Significant Results
 
-An example of $$\texttt{DGNet}$$ applied to compressible Euler equations in a Forward Facing Step problem is shown in <span style="color:blue">Figure 1</span> and <span style="color:blue">Figure 2</span>. $$\texttt{DGNet}$$ is trained with data generated from Model 1 within the time interval $$[0,1]$$s. Subsequently, the trained networks are used to predict the density field for both Model 1 (same geometry) and Model 2 (different geometry). The results demonstrate very low relative error at all time steps, as shown in Figure \ref{Fig:Relative_error_test_data_model1_model2_mesh}. Concurrently, $$\texttt{DGNet}$$ solutions at $$T = 4$$s exhibit excellent agreement with the numerical DG solutions, as shown in <span style="color:blue">Figure 2</span>, while delivering a $$5\times$$ faster solver.
+An example of $$\texttt{DGNet}$$ applied to compressible Euler equations in a Forward Facing Step problem is shown in <span style="color:blue">Figure 1</span> and <span style="color:blue">Figure 2</span>. $$\texttt{DGNet}$$ is trained with data generated from Model 1 within the time interval $$[0,1]$$s. Subsequently, the trained networks are used to predict the density field for both Model 1 (same geometry) and Model 2 (different geometry). The results demonstrate very low relative error at all time steps, as shown in Figure 1. Concurrently, $$\texttt{DGNet}$$ solutions at $$T = 4$$s exhibit excellent agreement with the numerical DG solutions, as shown in <span style="color:blue">Figure 2</span>, while delivering a $$5\times$$ faster solver.
 
 ![image](/assets/figures/hainguyen/year5/DGNet_1.png)
 
