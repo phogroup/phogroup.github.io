@@ -30,7 +30,7 @@ network architecture adaptation in the framework. In particular, we provide answ
 
 #### Brief outline of the proposed approach
 
- In the active learning procedure, we need to increase the size of the network as more training data-points are available. For this we use employ the topological derivative approach that we developed last year to make a decision on where to add a new layer and how to initialize the new layer. 
+ In the active learning procedure, we need to increase the size of the network as more training data-points are available. For this we use employ the topological derivative approach that we developed last year to make a decision on where to add a new layer and how to initialize the new layer. A schematic view of the layer addition strategy is shown in Figure 1.
  
 
  ![Fig6](/assets/figures/Krish/topo.png "fig:summ6")
