@@ -30,7 +30,15 @@ network architecture adaptation in the framework. In particular, we provide answ
 
 #### Brief outline of the proposed approach
 
- In the active learning procedure, we need to increase the size of the network as more training data-points are available. For this we use employ the topological derivative approach that we developed last year to make a decision on where to add a new layer and how to initialize the new layer. As an example of how the topological derivative approach works, we provide a sample numerical results for a wind velocity reconstruction problem where the objective is to predict the magnitude of wind velocity on a uniform 3D grid based on sparse measurement data. A brief outline of our procedure is as follows: a) Train a small network (with two hidden
+ In the active learning procedure, we need to increase the size of the network as more training data-points are available. For this we use employ the topological derivative approach that we developed last year to make a decision on where to add a new layer and how to initialize the new layer. 
+ 
+
+ ![Fig6](/assets/figures/Krish/topo_fig.pdf "fig:summ6")
+ 
+ 
+ 
+ 
+ As an example of how the topological derivative approach works, we provide a sample numerical results for a wind velocity reconstruction problem where the objective is to predict the magnitude of wind velocity on a uniform 3D grid based on sparse measurement data. A brief outline of our procedure is as follows: a) Train a small network (with two hidden
 layers and fixed width) for E epochs; b) Compute the topological derivative for each layer by solving an eigen value
 problem and identify the optimal location to introduce a new layer along with the corresponding initialization for
 the parameters; c) Train the new network with the added layer for E epochs; d) Repeat the steps until there is no
