@@ -4,8 +4,16 @@ title: CAREER - Scalable Approaches for Large-Scale Data-driven Bayesian Inverse
 permalink: /nsfcareer/
 ---
 
-![](/assets/figures/y1/title.png)  |  ![](/assets/figures/sheroze/comp.png)
-![](/assets/figures/jon/mangll_animation_frame.png) | ![](/assets/figures/hwan/ns1_m1000.png)
+<!-- ![](/assets/figures/y1/img.png)    ![](/assets/figures/y1/poisson.png) -->
+![](/assets/figures/hainguyen/DGGNN_2D_Euler_Airfoil_Mach1p2_AoA5.gif)
+Figure 1: Predictions made on an airfoil after solving the Euler equations.
+
+![](/assets/figures/Krish/topo_2.png)
+Figure 2: Evolution of solution (3D air current profile) upon adding new hidden layers in **architecture adaptation**.
+
+
+![image](/assets/figures/cole/new_ch.png)
+Figure 3: A high-dimensional latent space approach to predict the solutions of Cahn Hilliard PDE.
 
 
 # Table of Contents
