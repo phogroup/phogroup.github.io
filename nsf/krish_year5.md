@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Model Constrained DNNs for Inverse Problems
+title: Topological Derivative Approach for Architecture Design and Active Learning
 permalink: /nsfcareer/year5/krish_year5
 ---
 
