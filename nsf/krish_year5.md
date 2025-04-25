@@ -33,7 +33,8 @@ network architecture adaptation in the framework. In particular, we provide answ
  In the active learning procedure, we need to increase the size of the network as more training data-points are available. For this we use employ the topological derivative approach that we developed last year to make a decision on where to add a new layer and how to initialize the new layer. 
  
 
- ![Fig6](/assets/figures/Krish/topo_fig.pdf "fig:summ6")
+ ![Fig6](/assets/figures/Krish/topo.png "fig:summ6")
+ Figure 1: Schematic view of the topological derivative approach: A new layer with parameters $$\epsilon\phi$$ is inserted between the $$1^{st}$$ and $$2^{nd}$$ layer. When $$\epsilon=0$$, the network $$\Omega_\epsilon$$ behaves exactly the same way as $$\Omega_0$$ under standard training process.
  
  
  
@@ -49,7 +50,7 @@ appearing in later stages of the algorithm.
 
 
 ![Fig4](/assets/figures/Krish/topo_2.png "fig:summ4")
-Figure 1: Evolution of solution (3D air current profile) upon adding new hidden layers (Left to right): Solution after
+Figure 2: Evolution of solution (3D air current profile) upon adding new hidden layers (Left to right): Solution after
 the 4th iteration; Solution after the 5th iteration; Solution after the 6th iteration; Solution after the 8th iteration;
 Solution after the 10th iteration; True solution.
 
@@ -64,10 +65,10 @@ learn the steady state solution for different initial conditions. We start the a
 considered comparing our method with other approaches.
 
 ![Fig5](/assets/figures/Krish/active_new.png "fig:summ5")
-Figure 2: Left to right: Relative error on the predicted charge state for 250 different test dataset using the proposed
+Figure 3: Left to right: Relative error on the predicted charge state for 250 different test dataset using the proposed
 approach (final number of training samples: 50); Comparison between different active learning approaches.
 
-Figure 2 (right) shows that our proposed approach exhibits superior performance in comparison to other active
+Figure 3 (right) shows that our proposed approach exhibits superior performance in comparison to other active
 learning strategies. In Figure 2 (right), the term “iterations” refer to each time a new data sample is added to
 the training data set. Figure 2 (left) shows the point-wise relative error achieved by our proposed framework for the four charge states for 250 different test cases which clearly indicates that our
 method learns the steady state reasonably well.
