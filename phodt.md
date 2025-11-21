@@ -4,12 +4,10 @@ title: PhoDT Projects
 permalink: /phodt/
 ---
 
-# PhoDT Projects
-
-This page contains two major research works:
+# Projects
 
 1. [TAEN: A Model-Constrained Tikhonov Autoencoder Network for Forward and Inverse Problems](/phodt/taen)
-2. [A Model-Constrained Discontinuous Galerkin Network (DGNet) for Solving Compressible Euler equations](/phodt/dgnet)
+2. [A model-constrained discontinuous Galerkin Network (DGNet) for compressible Euler equations with out-of-distribution generalization](/phodt/dgnet)
 
 ---
 
@@ -33,7 +31,7 @@ This page contains two major research works:
 }
 ```
 
-### A Model-Constrained Discontinuous Galerkin Network (DGNet) for Solving Compressible Euler equations
+### A Model-Constrained Discontinuous Galerkin Network (DGNet) for Compressible Euler Equations with Out-Of-Distribution Generalization
 
 **Publication Link:** [https://www.sciencedirect.com/science/article/pii/S0045782525001847](https://www.sciencedirect.com/science/article/pii/S0045782525001847)
 
@@ -50,4 +48,3 @@ This page contains two major research works:
   publisher={Elsevier}
 }
 ```
-

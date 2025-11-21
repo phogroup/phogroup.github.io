@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A Model-Constrained Discontinuous Galerkin Network (DGNet) For Compressible Euler Equations With Out-Of-Distribution Generalization
+title: A Model-Constrained Discontinuous Galerkin Network (DGNet) for Compressible Euler Equations with Out-Of-Distribution Generalization
 permalink: /phodt/dgnet
 ---
 
