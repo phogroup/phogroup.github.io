@@ -58,4 +58,4 @@ plugins:
  - jekyll-seo-tag
 
 markdown: kramdown
-exclude: ["README.md"]
+exclude: ["README.md", "vendor"]
