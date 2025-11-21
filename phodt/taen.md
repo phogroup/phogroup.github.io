@@ -287,7 +287,7 @@ mcOPO / mcOPOfull
 TAEN / TAENfull
 </td>
 <td style="text-align: center; vertical-align: middle; padding: 5px;">
-<img src="/assets/figures/TAEN_projects/2D_Poisson/inverse_mean_error_predictions_mc_AutoEncoder_TNET_O2P2O_d1.pdf" width="100%" style="margin-bottom: 0px;">
+<img src="/assets/figures/TAEN_projects/2D_Poisson/inverse_mean_error_predictions_mc_AutoEncoder_TNet_O2P2O_d1.pdf" width="100%" style="margin-bottom: 0px;">
 </td>
 <td style="text-align: center; vertical-align: middle; padding: 5px;">
 <img src="/assets/figures/TAEN_projects/2D_Poisson/inverse_std_error_predictions_mc_AutoEncoder_TNet_O2P2O_d1.pdf" width="100%" style="margin-bottom: 0px;">
@@ -730,16 +730,16 @@ mcOPO / mcOPOfull
 TAEN / TAENfull
 </td>
 <td style="text-align: center; vertical-align: middle; padding: 5px;">
-<img src="/assets/figures/TAEN_projects/2D_NS/inverse_mean_error_predictions_mc_AutoEncoder_TNET_O2P2O_d1.pdf" width="100%" style="margin-bottom: 0px;">
+<img src="/assets/figures/TAEN_projects/2D_NS/inverse_mean_error_predictions_mc_AutoEncoder_TNet_O2P2O_d1.pdf" width="100%" style="margin-bottom: 0px;">
 </td>
 <td style="text-align: center; vertical-align: middle; padding: 5px;">
-<img src="/assets/figures/TAEN_projects/2D_NS/inverse_std_error_predictions_mc_AutoEncoder_TNET_O2P2O_d1.pdf" width="100%" style="margin-bottom: 0px;">
+<img src="/assets/figures/TAEN_projects/2D_NS/inverse_std_error_predictions_mc_AutoEncoder_TNet_O2P2O_d1.pdf" width="100%" style="margin-bottom: 0px;">
 </td>
 <td style="text-align: center; vertical-align: middle; padding: 5px;">
-<img src="/assets/figures/TAEN_projects/2D_NS/inverse_mean_error_predictions_mc_AutoEncoder_TNET_O2P2O_d100.pdf" width="100%" style="margin-bottom: 0px;">
+<img src="/assets/figures/TAEN_projects/2D_NS/inverse_mean_error_predictions_mc_AutoEncoder_TNet_O2P2O_d100.pdf" width="100%" style="margin-bottom: 0px;">
 </td>
 <td style="text-align: center; vertical-align: middle; padding: 5px;">
-<img src="/assets/figures/TAEN_projects/2D_NS/inverse_std_error_predictions_mc_AutoEncoder_TNET_O2P2O_d100.pdf" width="100%" style="margin-bottom: 0px;">
+<img src="/assets/figures/TAEN_projects/2D_NS/inverse_std_error_predictions_mc_AutoEncoder_TNet_O2P2O_d100.pdf" width="100%" style="margin-bottom: 0px;">
 </td>
 </tr>
 <tr>
